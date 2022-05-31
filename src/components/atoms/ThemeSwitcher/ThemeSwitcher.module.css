@@ -1,0 +1,17 @@
+.themeSwitcher {
+  width: 20px;
+  height: 20px;
+}
+
+.themeSwitcher svg path {
+  fill: #858BB2;
+}
+
+.themeSwitcher:hover {
+  cursor: pointer;
+}
+
+.themeSwitcher:hover svg path {
+  fill: #DFE3FA;
+  transition: fill 300ms;
+}

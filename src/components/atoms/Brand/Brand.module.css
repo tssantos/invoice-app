@@ -1,0 +1,65 @@
+.brand {
+  position: relative;
+
+  width: 104px;
+  height: 104px;
+  border-radius: 0px 20px 20px 0px;
+
+  background-color: #7c5dfa;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand::after {
+  position: absolute;
+
+  top: 52px;
+  width: 104px;
+  height: 52px;
+  border-radius: 20px 0px 20px 0px;
+
+  background-color: #9277ff;
+  content: "";
+}
+
+.brand svg {
+  z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .brand {
+    width: 80px;
+    height: 80px;
+    flex-direction: row;
+  }
+
+  .brand::after {
+    top: 40px;
+    width: 80px;
+    height: 40px;
+  }
+
+  .brand svg {
+    width: 32px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .brand {
+    width: 72px;
+    height: 72px;
+  }
+
+  .brand::after {
+    top: 36px;
+    width: 72px;
+    height: 36px;
+  }
+
+  .brand svg {
+    width: 28px;
+  }
+}

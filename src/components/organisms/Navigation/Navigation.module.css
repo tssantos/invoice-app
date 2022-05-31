@@ -1,0 +1,93 @@
+.navigation {
+  width: 104px;
+  min-width: 104px;
+  height: 100%;
+  min-height: 100vh;
+  border-radius: 0px 20px 20px 0px;
+
+  background-color: #373b53;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  padding: 0px 0px 24px 0px;
+}
+
+.navigation .brand {
+  margin-bottom: auto;
+}
+
+.navigation .themeSwitcher {
+  margin-bottom: 32px;
+}
+
+.navigation .divider {
+  width: 100%;
+  border-bottom: 1px solid #494e6e;
+}
+
+.navigation .avatar {
+  width: 40px;
+  height: 40px;
+  margin-top: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .navigation {
+    width: 100%;
+    min-width: 100vw;
+    height: 80px;
+    min-height: 80px;
+    border-radius: 0px;
+
+    background-color: #373b53;
+
+    flex-direction: row;
+    align-items: center;
+
+    padding: 0px;
+  }
+
+  .navigation .brand {
+    margin-bottom: unset;
+    margin-right: auto;
+  }
+
+  .navigation .themeSwitcher {
+    margin-bottom: 0;
+    margin-right: 32px;
+  }
+
+  .navigation .divider {
+    width: 1px;
+    height: 100%;
+    border-right: 1px solid #494e6e;
+  }
+
+  .navigation .avatar {
+    margin-top: 0;
+    margin-left: 32px;
+    margin-right: 32px;
+    width: 32px;
+    height: 32px;
+  }
+}
+
+
+@media screen and (max-width: 375px) {
+  .navigation {
+    height: 72px;
+    min-height: 72px;
+  }
+
+  .navigation .themeSwitcher {
+    margin-right: 24px;
+  }
+
+  .navigation .avatar {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+}
