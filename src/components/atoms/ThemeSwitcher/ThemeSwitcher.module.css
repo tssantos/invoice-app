@@ -13,5 +13,5 @@
 
 .themeSwitcher:hover svg path {
   fill: #DFE3FA;
-  transition: fill 300ms;
+  transition: all 300ms;
 }

@@ -1,0 +1,57 @@
+.invoiceHeader {
+  width: 100%;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.invoiceHeader .title {
+  height: 100%;
+
+  justify-self: flex-start;
+  margin-right: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.invoiceHeader .title h1 {
+  color: #0C0E16;
+}
+
+.invoiceHeader.dark .title h1 {
+  color: #FFFFFF;
+}
+
+.invoiceHeader .title p {
+  color: #888EB0;
+}
+
+.invoiceHeader.dark .title p {
+  color: #DFE3FA;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .invoiceHeader {
+    width: 100%;
+    height: 44px;
+  }
+
+  .invoiceHeader .title h1 {
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: -0.625px;
+  }
+  
+  .invoiceHeader .title p {
+    font-size: 12px;
+    line-height: 15px;    
+    letter-spacing: -0.25px;
+  }
+}

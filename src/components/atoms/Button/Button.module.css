@@ -25,6 +25,13 @@
 .button > p {
   padding: 1px 16px 0px;
   height: 16px;
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -0.25px;
+  
+  color: #ffffff;
 }
 
 .button.icon > p {
@@ -46,7 +53,7 @@
 
 .button:hover {
   cursor: pointer;
-  transition: color 500ms, background-color 500ms;
+  transition: all 300ms;
 }
 
 .button.primary:hover {
@@ -98,12 +105,13 @@
   background-color: #ff9797;
 }
 
-.button > p {
-}
-
 @media screen and (max-width: 375px) {
   .button.icon {
     height: 44px;
     padding: 6px;
+  }
+
+  .button.icon > p {
+    padding: 1px 8px 0px;
   }
 }
